@@ -4,6 +4,8 @@ plugins {
     alias(libs.plugins.kotlin.compose)
     // Tambahkan KAPT untuk memproses anotasi Room
     id("org.jetbrains.kotlin.kapt")
+    // Tambahkan Hilt Plugin
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -45,6 +47,10 @@ dependencies {
     // Pastikan KAPT diletakkan sebelum implementation
     kapt(libs.androidx.room.compiler) // Untuk Room compiler
 
+    // --- HILT COMPILERS ---
+    kapt(libs.dagger.hilt.android.compiler) // Hilt compiler inti
+    kapt(libs.androidx.hilt.compiler) // Hilt compiler AndroidX
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -60,6 +66,9 @@ dependencies {
     implementation(libs.androidx.room.ktx)
     //paging
     implementation(libs.androidx.paging.common)
+    //hilt
+    implementation(libs.hilt.android)
+    implementation(libs.androidx.hilt.navigation.compose)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
