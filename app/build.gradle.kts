@@ -58,6 +58,8 @@ dependencies {
     // --- ROOM COMPONENTS ---
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
+    //paging
+    implementation(libs.androidx.paging.common)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
