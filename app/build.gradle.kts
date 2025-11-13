@@ -64,8 +64,9 @@ dependencies {
     // --- ROOM COMPONENTS ---
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
-    //paging
-    implementation(libs.androidx.paging.common)
+    implementation(libs.androidx.room.paging)
+    // Tambahkan Paging Compose untuk UI
+    implementation(libs.androidx.paging.compose)
     //hilt
     implementation(libs.hilt.android)
     implementation(libs.androidx.hilt.navigation.compose)
