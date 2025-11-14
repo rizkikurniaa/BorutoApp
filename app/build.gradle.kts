@@ -44,6 +44,7 @@ android {
 }
 
 dependencies {
+    implementation(libs.androidx.foundation.layout)
     // Pastikan KAPT diletakkan sebelum implementation
     kapt(libs.androidx.room.compiler) // Untuk Room compiler
 
@@ -58,7 +59,6 @@ dependencies {
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
-    implementation(libs.androidx.material3)
     implementation(libs.androidx.navigation.runtime.ktx)
     implementation(libs.androidx.navigation.compose)
     // --- ROOM COMPONENTS ---
@@ -70,6 +70,12 @@ dependencies {
     //hilt
     implementation(libs.hilt.android)
     implementation(libs.androidx.hilt.navigation.compose)
+    //material
+    implementation(libs.androidx.material)
+    // Horizontal Pager and Indicators - Accompanist
+    implementation(libs.accompanist.pager)
+    implementation(libs.accompanist.pager.indicators)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
