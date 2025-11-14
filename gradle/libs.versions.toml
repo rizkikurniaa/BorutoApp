@@ -15,7 +15,11 @@ room-paging = "2.6.1"
 paging-compose-version = "1.0.0-alpha14"
 hiltAndroid = "2.51.1"
 hiltNavigationCompose = "1.2.0"
-hilt-ext = "1.2.0" # Untuk androidx.hilt:hilt-compiler
+hilt-ext = "1.2.0"
+material = "1.9.4"
+accompanistPager = "0.21.2-beta"
+accompanistPagerIndicators = "0.21.2-beta"
+foundationLayout = "1.9.4"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -31,7 +35,6 @@ androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
 androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
-androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 androidx-navigation-runtime-ktx = { group = "androidx.navigation", name = "navigation-runtime-ktx", version.ref = "navigationRuntimeKtx" }
 androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
 # --- ROOM COMPONENTS ---
@@ -47,7 +50,11 @@ androidx-paging-compose = { group = "androidx.paging", name = "paging-compose", 
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hiltAndroid" }
 androidx-hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
 dagger-hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hiltAndroid" } # kapt
-androidx-hilt-compiler = { group = "androidx.hilt", name = "hilt-compiler", version.ref = "hilt-ext" } # kapt
+androidx-hilt-compiler = { group = "androidx.hilt", name = "hilt-compiler", version.ref = "hilt-ext" }
+androidx-material = { group = "androidx.compose.material", name = "material", version.ref = "material" }
+accompanist-pager = { group = "com.google.accompanist", name = "accompanist-pager", version.ref = "accompanistPager" }
+accompanist-pager-indicators = { group = "com.google.accompanist", name = "accompanist-pager-indicators", version.ref = "accompanistPagerIndicators" }
+androidx-foundation-layout = { group = "androidx.compose.foundation", name = "foundation-layout", version.ref = "foundationLayout" } # kapt
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
