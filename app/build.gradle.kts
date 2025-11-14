@@ -45,6 +45,7 @@ android {
 
 dependencies {
     implementation(libs.androidx.foundation.layout)
+    implementation(libs.androidx.datastore.preferences)
     // Pastikan KAPT diletakkan sebelum implementation
     kapt(libs.androidx.room.compiler) // Untuk Room compiler
 
