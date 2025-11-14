@@ -6,7 +6,7 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
-import id.bytezilla.borutoapp.data.pref.DataStoreOperationsImpl
+import id.bytezilla.borutoapp.data.repository.DataStoreOperationsImpl
 import id.bytezilla.borutoapp.domain.repository.DataStoreOperations
 import javax.inject.Singleton
 
