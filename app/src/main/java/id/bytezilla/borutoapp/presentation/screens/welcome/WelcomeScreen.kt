@@ -45,6 +45,7 @@ import id.bytezilla.borutoapp.ui.theme.descriptionColor
 import id.bytezilla.borutoapp.ui.theme.inactiveIndicatorColor
 import id.bytezilla.borutoapp.ui.theme.titleColor
 import id.bytezilla.borutoapp.ui.theme.welcomeScreenBackgroundColor
+import id.bytezilla.borutoapp.util.Constants.LAST_ON_BOARDING_PAGE
 import id.bytezilla.borutoapp.util.Constants.ON_BOARDING_PAGE_COUNT
 
 @ExperimentalAnimationApi
@@ -150,7 +151,7 @@ fun FinishButton(
     ) {
         AnimatedVisibility(
             modifier = Modifier.fillMaxWidth(),
-            visible = pagerState.currentPage == 2
+            visible = pagerState.currentPage == LAST_ON_BOARDING_PAGE
         ) {
             Button(
                 onClick = onClick,
